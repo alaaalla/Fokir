@@ -105,18 +105,20 @@
     padding: 35vh 0;
 }
 
-.home-content p {
-    width: 380px;
+.home-content .text {
+    width: 280px;
+    height: 30px;
     margin: auto;
     position: relative;
     overflow: hidden;
     border-right: solid 4px white;
 }
 
-.home-content p span {
+.home-content p {
+    font-size: 22px;
     position: absolute;
     animation-name: developer;
-    animation-duration: 2.5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
@@ -124,7 +126,7 @@
     0% {}
 
     50% {
-        transform: translateX(150px)
+        transform: translateX(350px)
     }
 
     100% {
@@ -139,9 +141,6 @@
     font-weight: bold;
 }
 
-.home-content p {
-    font-size: 22px;
-}
 
 /* A B O U T    S T Y L E */
 .about {
@@ -516,6 +515,7 @@ footer .icons i {
     transition: 0.5s;
 }
 
-footer .icons span {
+footer a {
     color: #FF305B;
+    text-decoration: none;
 }
