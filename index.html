@@ -5,35 +5,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css files/all.min.css">
   <link rel="stylesheet" href="css files/main.css">
   <link rel="stylesheet" href="css files/media_query.css">
-  <link rel="stylesheet" href="css files/all.min.css">
+
+
 </head>
 
 <body>
   <!-- S T A R T    H O M E -->
-  <div class="nav">
-    <h1>Fokir</h1>
-    <div class="nav-links">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#testimonial">Testimonial</a></li>
-        <li><a href="#Blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <div class="clear-fix"></div>
-      </ul>
+  <nav>
+    <div class="container">
+      <h1>Fokir</h1>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonial">Testimonial</a></li>
+          <li><a href="#Blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="clear-fix"></div>
+        </ul>
+      </div>
     </div>
+  </nav>
   </div>
   <section class="home" id="home">
     <div class="inner">
       <div class="home-content">
         <h2>Hello i'm</h2>
         <h1>ALEX SMITH</h1>
-        <div class="text">
+        <!-- <div class="text">
           <p>Professional Web <span>Designer</span></p>
+          <p>Professional Web <span>Developer</span></p>
+        </div> -->
+        <div class="myJob">
+          <div class="txt">
+            <div class="static-txt">
+              <p>Professional Web</p>
+            </div>
+            <ul class="dynamic-txts">
+              <li><span>Designer</span></li>
+              <li><span>Developer</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -65,6 +82,7 @@
           nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
           id est laborum.</p>
         <table>
+          <thead></thead>
           <tbody>
             <tr>
               <td><span>Name:</span>Rdam smith</td>
@@ -76,7 +94,7 @@
             </tr>
             <tr>
               <td><span>Freelance:</span>Available</td>
-              <td><span>E-mail:</span> example@gmail.com</td>
+              <td><span>E-mail:</span> ex@gmail.com</td>
             </tr>
           </tbody>
         </table>
@@ -170,22 +188,22 @@
     <div class="container">
       <div class="members">
         <i class="fa-solid fa-users"></i>
-        <h2>36</h2>
+        <h2 class="num1">36</h2>
         <h4>Team members</h4>
       </div>
       <div class="members">
         <i class="fa-regular fa-copy"></i>
-        <h2>63</h2>
+        <h2 class="num2">100</h2>
         <h4>Complete Projects</h4>
       </div>
       <div class="members">
         <i class="fa-solid fa-cloud-arrow-down"></i>
-        <h2>330</h2>
+        <h2 class="num3">330</h2>
         <h4>Files Downloaded</h4>
       </div>
       <div class="members">
         <i class="fa-solid fa-mug-saucer"></i>
-        <h2>220</h2>
+        <h2 class="num4">210</h2>
         <h4>Lines Of Code</h4>
         <div class="clear-fix"></div>
       </div>
@@ -249,16 +267,18 @@
   <!-- E N D     B L O G -->
   <!-- S T A R T     C O N T A C T-->
   <section class="contact" id="contact">
-    <div class="title">
-      <h1>Contact Us</h1>
-    </div>
-    <div class="user">
-      <input type="text" placeholder="Name" required name="user-name" class="name">
-      <input type="email" placeholder="Email" required name="user-email" class="email">
-      <div class="clear-fix"></div>
-      <input type="text" name="subject" placeholder="Subject" class="subject">
-      <textarea name="message" placeholder="Message for me" required id=""></textarea>
-      <button type="button">SEND MESSAGE</button>
+    <div class="container">
+      <div class="title">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="user">
+        <input type="text" placeholder="Name" required name="user-name" class="name">
+        <input type="email" placeholder="Email" required name="user-email" class="email">
+        <div class="clear-fix"></div>
+        <input type="text" name="subject" placeholder="Subject" class="subject">
+        <textarea name="message" placeholder="Message for me" required id=""></textarea>
+        <button type="button">SEND MESSAGE</button>
+      </div>
     </div>
   </section>
   <!-- E N D          C O N T A C T-->
@@ -274,6 +294,7 @@
     </div>
   </footer>
   <!--E N D       F O O T E R -->
+  <script src="./js files/main.js"></script>
 </body>
 
 </html>

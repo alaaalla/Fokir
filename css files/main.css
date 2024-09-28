@@ -1,6 +1,9 @@
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: 'Source Sans Pro', sans-serif;
     scroll-behavior: smooth;
 }
@@ -15,7 +18,7 @@
 }
 
 .title {
-    padding: 30px 0;
+    margin-bottom: 50px;
 }
 
 .title h1::before {
@@ -47,7 +50,7 @@
 /* H O M E   S T Y L E  */
 .home {
     height: 100vh;
-    background-image: url(../imgs/slider-02.jpg);
+    background-image: url(../imgs/8mwghf8p.png);
     background-size: cover;
     margin: auto;
     background-position: center center;
@@ -60,8 +63,8 @@
 
 }
 
-.nav {
-    background-color: black;
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
     right: 0;
@@ -70,7 +73,7 @@
     z-index: 3;
 }
 
-.nav h1 {
+nav h1 {
     color: #FF284F;
     float: left;
     padding: 15px 40px;
@@ -105,7 +108,7 @@
     padding: 35vh 0;
 }
 
-.home-content .text {
+/* .home-content .text {
     width: 280px;
     height: 30px;
     margin: auto;
@@ -132,6 +135,67 @@
     100% {
         transform: translateX(0px);
     }
+} */
+.myJob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt {
+    display: inline-flex;
+}
+
+.home-content .static-txt {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.home-content .dynamic-txts {
+    margin-left: 5px;
+    padding-left: 0;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    animation: slide 3s steps(2) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -60px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    border-left: 3px solid #fff;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+
 }
 
 .home-content h1 {
@@ -234,6 +298,7 @@
     padding: 15px 15px;
     font-size: medium;
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 /* S E R V I C E S    S T Y L E */
@@ -370,7 +435,6 @@
 }
 
 .feedback {
-    height: 250px;
     background-color: #F1F1F1;
     margin: auto;
     position: relative;
